@@ -5,101 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于我们 - 非遗舞鉴</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="非遗舞鉴Logo" class="logo">
-            <h1>非遗舞鉴</h1>
-        </div>
-        <nav>
-            <a href="index.html">首页</a>
-            <a href="about.html" class="active">关于我们</a>
-            <a href="index.html#resources">数字资源</a>
-            <a href="index.html#education">在线学习</a>
-            <a href="index.html#products">文创产品</a>
-            <a href="index.html#contact">联系我们</a>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="about-hero">
-            <h2>关于非遗舞鉴</h2>
-        </section>
-        
-        <section class="about-content">
-            <article>
-                <h3>项目背景</h3>
-                <p>非遗舞鉴项目始于2023年，旨在通过数字化技术保护和传承中国少数民族舞蹈文化。我们团队由文化保护专家、技术开发者和舞蹈艺术家组成，致力于打造一个全方位的非遗舞蹈保护平台。</p>
-            </article>
-            
-            <article>
-                <h3>我们的使命</h3>
-                <p>通过科技手段记录、保存和传播少数民族舞蹈文化遗产，促进非遗舞蹈的活态传承，让更多人了解、学习和欣赏这些珍贵的文化瑰宝。</p>
-            </article>
-            
-            <article>
-                <h3>技术特色</h3>
-                <ul>
-                    <li>3D动作捕捉与数字化存档</li>
-                    <li>AI舞蹈动作分析与评估</li>
-                    <li>VR/AR沉浸式学习体验</li>
-                    <li>区块链技术确保数据真实性</li>
-                </ul>
-            </article>
-            
-            <article class="team">
-                <h3>团队介绍</h3>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="avatar">👨‍💻</div>
-                        <h4>张技术</h4>
-                        <p>技术总监</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="avatar">👩‍🎨</div>
-                        <h4>李文化</h4>
-                        <p>艺术指导</p>
-                    </div>
-                    <div class="team-member">
-                        <div class="avatar">🧑‍🏫</div>
-                        <h4>王教授</h4>
-                        <p>学术顾问</p>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>非遗舞鉴</h3>
-                <p>少数民族舞蹈数字保护与活态传承平台</p>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="非遗舞鉴">
+                <h1>非遗舞鉴</h1>
             </div>
-            <div class="footer-section">
-                <h3>快速链接</h3>
+            <nav class="nav">
                 <ul>
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="about.html">关于我们</a></li>
-                    <li><a href="index.html#resources">数字资源</a></li>
+                    <li><a href="#">数字资源库</a></li>
+                    <li><a href="#">在线教育</a></li>
+                    <li><a href="#">文创产品</a></li>
+                    <li><a href="#">文旅服务</a></li>
+                    <li class="active"><a href="about.html">关于我们</a></li>
                 </ul>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>关于非遗舞鉴</h2>
+            <p>科技护根 · 文化铸魂</p>
+        </div>
+    </section>
+
+    <section class="about-mission">
+        <div class="container">
+            <div class="about-image">
+                <img src="images/banner.jpg" alt="我们的使命">
             </div>
-            <div class="footer-section">
-                <h3>联系方式</h3>
-                <p>邮箱: contact@feiyiwujian.com</p>
-                <div class="social-icons">
-                    <a href="#" aria-label="微信">📱</a>
-                    <a href="#" aria-label="微博">🧣</a>
-                    <a href="#" aria-label="抖音">🎵</a>
+            <div class="about-text">
+                <h3>我们的使命</h3>
+                <p>非遗舞鉴平台成立于2020年，是一个专注于少数民族舞蹈数字化保护与活态传承的综合性平台。我们致力于通过现代科技手段，记录、保存、研究和传播中国丰富多彩的少数民族舞蹈文化。</p>
+                <p>平台汇集了非遗保护专家、舞蹈艺术家、技术开发人员和文创设计师等多领域人才，共同探索非遗舞蹈在数字时代传承与发展的创新路径。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="container">
+            <h3>核心团队</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo"></div>
+                    <h4>张教授</h4>
+                    <p class="position">非遗保护专家</p>
+                    <p>中央民族大学非遗研究中心主任，从事少数民族文化研究30余年。</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo"></div>
+                    <h4>李老师</h4>
+                    <p class="position">舞蹈艺术家</p>
+                    <p>国家级非遗传承人，精通多种少数民族舞蹈。</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo"></div>
+                    <h4>王工程师</h4>
+                    <p class="position">技术总监</p>
+                    <p>10年数字文化项目开发经验，专注于3D建模与动作捕捉技术。</p>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>© 2023 非遗舞鉴项目组. 保留所有权利.</p>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <h3>合作伙伴</h3>
+            <div class="partner-logos">
+                <div class="partner-logo">文化部非遗司</div>
+                <div class="partner-logo">中央民族大学</div>
+                <div class="partner-logo">中国非遗保护协会</div>
+                <div class="partner-logo">腾讯文化</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="非遗舞鉴">
+                        <h3>非遗舞鉴</h3>
+                    </div>
+                    <p>少数民族舞蹈数字保护与活态传承平台</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="#">数字资源库</a></li>
+                        <li><a href="#">在线教育</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p>邮箱: contact@feiyidance.com</p>
+                    <p>电话: 010-12345678</p>
+                    <div class="social-media">
+                        <a href="#">微信</a>
+                        <a href="#">微博</a>
+                        <a href="#">抖音</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 非遗舞鉴 版权所有</p>
+                <p>京ICP备12345678号</p>
+            </div>
         </div>
     </footer>
-    
+
     <script src="js/main.js"></script>
 </body>
 </html>
