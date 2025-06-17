@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非遗舞鉴 - 少数民族舞蹈数字保护平台</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Google Analytics (替换GA_MEASUREMENT_ID为你的ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="非遗舞鉴Logo" class="logo">
+            <h1>非遗舞鉴</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="active">首页</a>
+            <a href="about.html">关于我们</a>
+            <a href="#resources">数字资源</a>
+            <a href="#education">在线学习</a>
+            <a href="#products">文创产品</a>
+            <a href="#contact">联系我们</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>保护与传承少数民族舞蹈文化</h2>
+                <p>数字化技术让非遗舞蹈焕发新生</p>
+                <a href="#resources" class="cta-button">探索舞蹈</a>
+            </div>
+        </section>
+        
+        <section id="resources" class="features">
+            <h2>数字资源库</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon">💃</div>
+                    <h3>56个民族舞蹈</h3>
+                    <p>收录300+种少数民族舞蹈数字档案</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎭</div>
+                    <h3>3D舞蹈模型</h3>
+                    <p>360°查看舞蹈动作细节</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔍</div>
+                    <h3>高级搜索</h3>
+                    <p>按动作特征、音乐节奏等查找</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery">
+            <h2>舞蹈展示</h2>
+            <div class="image-grid">
+                <img src="images/dance1.jpg" alt="藏族舞蹈" loading="lazy">
+                <img src="images/dance2.jpg" alt="苗族舞蹈" loading="lazy">
+                <img src="images/dance3.jpg" alt="彝族舞蹈" loading="lazy">
+            </div>
+        </section>
+        
+        <section id="education" class="education">
+            <h2>在线学习</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>AI动作评估</h3>
+                    <p>上传你的舞蹈视频，获得专业评分</p>
+                    <button class="demo-button">查看演示</button>
+                </div>
+                <div class="education-card">
+                    <h3>VR舞蹈教室</h3>
+                    <p>沉浸式学习少数民族舞蹈</p>
+                    <button class="demo-button">查看演示</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="products" class="products">
+            <h2>文创产品</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <h3>数字藏品</h3>
+                    <p>限量版NFT舞蹈片段</p>
+                </div>
+                <div class="product-card">
+                    <h3>实体文创</h3>
+                    <p>舞蹈主题服饰与工艺品</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>联系我们</h2>
+            <form name="contact" netlify>
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">留言</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">发送消息</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>非遗舞鉴</h3>
+                <p>少数民族舞蹈数字保护与活态传承平台</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="#resources">数字资源</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p>邮箱: contact@feiyiwujian.com</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="微信">📱</a>
+                    <a href="#" aria-label="微博">🧣</a>
+                    <a href="#" aria-label="抖音">🎵</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 非遗舞鉴项目组. 保留所有权利.</p>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
