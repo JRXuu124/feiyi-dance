@@ -1,0 +1,35 @@
+# 非遗舞鉴专用配置
+name: "非遗舞鉴"
+description: "少数民族舞蹈数字保护与活态传承平台"
+baseurl: "/wujian"  # 项目名称
+url: "https://jrxuu124.github.io"
+
+# 国际化设置
+lang: "zh-CN"
+timezone: "Asia/Shanghai"
+
+# 构建选项
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# 自定义变量
+navbar:
+  links:
+    - name: "首页"
+      url: "/"
+    - name: "数字资源库"
+      url: "/resources"
+    - name: "关于我们"
+      url: "/about"
+
+# SASS设置
+sass:
+  style: compressed
+
+# 默认值
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
