@@ -1,6 +1,11 @@
-// 主JavaScript文件
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('非遗舞鉴网站已加载！');
+    // 移动菜单切换
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.nav');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
     
     // 平滑滚动
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -12,61 +17,81 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                targetElement.scrollIntoView({
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70,
                     behavior: 'smooth'
                 });
                 
-                // 更新URL而不跳转
-                if (history.pushState) {
-                    history.pushState(null, null, targetId);
-                } else {
-                    location.hash = targetId;
+                // 如果是移动菜单，点击后关闭菜单
+                if (nav.classList.contains('active')) {
+                    nav.classList.remove('active');
                 }
             }
         });
     });
     
-    // 卡片悬停效果
-    const cards = document.querySelectorAll('.feature-card, .education-card, .product-card, .team-member');
-    
-    cards.forEach(card => {
-        card.addEventListener('mouseover', function() {
-            this.style.transform = 'translateY(-5px)';
-            this.style.boxShadow = '0 10px 20px rgba(0,0,0,0.15)';
-        });
-        
-        card.addEventListener('mouseout', function() {
-            this.style.transform = '';
-            this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
-        });
-    });
-    
-    // 演示按钮点击效果
-    const demoButtons = document.querySelectorAll('.demo-button');
-    
-    demoButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            alert('这是演示版本，完整功能将在正式版中提供！');
-        });
-    });
-    
-    // 表单提交处理
-    const contactForm = document.querySelector('form[name="contact"]');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            // 在实际应用中，这里会有表单验证和AJAX提交
-            // 对于Netlify表单，不需要额外处理
-            console.log('表单已提交');
-        });
-    }
-    
-    // 导航栏滚动效果
+    // 滚动时头部样式变化
     window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        if (window.scrollY > 100) {
-            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
+        const header = document.querySelector('.header');
+        if (window.scrollY > 50) {
+            header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
         } else {
             header.style.boxShadow = 'none';
         }
     });
+    
+    // 动画效果 - 滚动时显示元素
+    const animateOnScroll = function() {
+        const elements = document.querySelectorAll('.feature-item, .news-item, .team-member');
+        
+        elements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+            
+            if (elementPosition < screenPosition) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    };
+    
+    // 设置初始状态
+    document.querySelectorAll('.feature-item, .news-item, .team-member').forEach(element => {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'all 0.5s ease';
+    });
+    
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // 初始加载时也执行一次
+    
+    // 轮播图初始化
+    function initSlideshow() {
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        const slideInterval = 5000; // 5秒切换一次
+        
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+        
+        // 启动轮播
+        let slideTimer = setInterval(nextSlide, slideInterval);
+        
+        // 鼠标悬停时暂停轮播
+        const slideshow = document.querySelector('.slideshow');
+        slideshow.addEventListener('mouseenter', () => {
+            clearInterval(slideTimer);
+        });
+        
+        // 鼠标离开时恢复轮播
+        slideshow.addEventListener('mouseleave', () => {
+            slideTimer = setInterval(nextSlide, slideInterval);
+        });
+    }
+    
+    // 调用轮播图初始化函数
+    initSlideshow();
 });

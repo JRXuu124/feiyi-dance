@@ -3,151 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>非遗舞鉴 - 少数民族舞蹈数字保护平台</title>
+    <title>非遗舞鉴 - 少数民族舞蹈数字保护与活态传承平台</title>
     <link rel="stylesheet" href="styles/main.css">
-    <!-- Google Analytics (替换GA_MEASUREMENT_ID为你的ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="非遗舞鉴Logo" class="logo">
-            <h1>非遗舞鉴</h1>
-        </div>
-        <nav>
-            <a href="index.html" class="active">首页</a>
-            <a href="about.html">关于我们</a>
-            <a href="#resources">数字资源</a>
-            <a href="#education">在线学习</a>
-            <a href="#products">文创产品</a>
-            <a href="#contact">联系我们</a>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>保护与传承少数民族舞蹈文化</h2>
-                <p>数字化技术让非遗舞蹈焕发新生</p>
-                <a href="#resources" class="cta-button">探索舞蹈</a>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="非遗舞鉴">
+                <h1>非遗舞鉴</h1>
             </div>
-        </section>
-        
-        <section id="resources" class="features">
-            <h2>数字资源库</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="icon">💃</div>
-                    <h3>56个民族舞蹈</h3>
-                    <p>收录300+种少数民族舞蹈数字档案</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🎭</div>
-                    <h3>3D舞蹈模型</h3>
-                    <p>360°查看舞蹈动作细节</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon">🔍</div>
-                    <h3>高级搜索</h3>
-                    <p>按动作特征、音乐节奏等查找</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="gallery">
-            <h2>舞蹈展示</h2>
-            <div class="image-grid">
-                <img src="images/dance1.jpg" alt="藏族舞蹈" loading="lazy">
-                <img src="images/dance2.jpg" alt="苗族舞蹈" loading="lazy">
-                <img src="images/dance3.jpg" alt="彝族舞蹈" loading="lazy">
-            </div>
-        </section>
-        
-        <section id="education" class="education">
-            <h2>在线学习</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>AI动作评估</h3>
-                    <p>上传你的舞蹈视频，获得专业评分</p>
-                    <button class="demo-button">查看演示</button>
-                </div>
-                <div class="education-card">
-                    <h3>VR舞蹈教室</h3>
-                    <p>沉浸式学习少数民族舞蹈</p>
-                    <button class="demo-button">查看演示</button>
-                </div>
-            </div>
-        </section>
-        
-        <section id="products" class="products">
-            <h2>文创产品</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <h3>数字藏品</h3>
-                    <p>限量版NFT舞蹈片段</p>
-                </div>
-                <div class="product-card">
-                    <h3>实体文创</h3>
-                    <p>舞蹈主题服饰与工艺品</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="contact" class="contact">
-            <h2>联系我们</h2>
-            <form name="contact" netlify>
-                <div class="form-group">
-                    <label for="name">姓名</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">邮箱</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">留言</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">发送消息</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>非遗舞鉴</h3>
-                <p>少数民族舞蹈数字保护与活态传承平台</p>
-            </div>
-            <div class="footer-section">
-                <h3>快速链接</h3>
+            <nav class="nav">
                 <ul>
-                    <li><a href="index.html">首页</a></li>
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="#">数字资源库</a></li>
+                    <li><a href="#">在线教育</a></li>
+                    <li><a href="#">文创产品</a></li>
+                    <li><a href="#">文旅服务</a></li>
                     <li><a href="about.html">关于我们</a></li>
-                    <li><a href="#resources">数字资源</a></li>
                 </ul>
+            </nav>
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </header>
+
+
+<section class="hero">
+    <div class="slideshow">
+        <div class="slide active" style="background-image: url('images/banner1.png')"></div>
+        <div class="slide" style="background-image: url('images/2.jpg')"></div>
+        <div class="slide" style="background-image: url('images/3.jpg')"></div>
+        <div class="slide" style="background-image: url('images/4.jpg')"></div>
+        <div class="slide" style="background-image: url('images/6.jpg')"></div>
+    </div>
+    <div class="hero-content">
+        <h2>科技护根 · 文化铸魂</h2>
+        <p>数字化保护与活态传承少数民族舞蹈文化</p>
+        <a href="#" class="btn">探索舞蹈</a>
+    </div>
+    <div class="hero-pattern"></div>
+</section>
+
+    <section class="intro">
+        <div class="container">
+            <div class="intro-text">
+                <h3>非遗舞鉴平台</h3>
+                <p>我们致力于通过数字化技术保护与传承中国少数民族舞蹈文化，建立完整的数字档案库，开发创新教育模式，推动非遗舞蹈的活态传承。</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="number">300+</span>
+                        <span class="label">舞蹈种类</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">50+</span>
+                        <span class="label">非遗传承人</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">100+</span>
+                        <span class="label">教学视频</span>
+                    </div>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>联系方式</h3>
-                <p>邮箱: contact@feiyiwujian.com</p>
-                <div class="social-icons">
-                    <a href="#" aria-label="微信">📱</a>
-                    <a href="#" aria-label="微博">🧣</a>
-                    <a href="#" aria-label="抖音">🎵</a>
+            <div class="intro-image">
+                <div class="image-frame">
+                    <img src="images/banner.jpg" alt="少数民族舞蹈">
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>© 2023 非遗舞鉴项目组. 保留所有权利.</p>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>平台特色</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="icon">🔄</div>
+                    <h4>3D数字孪生</h4>
+                    <p>通过3D建模技术，全方位展示舞蹈动作细节，支持360度旋转查看。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🤖</div>
+                    <h4>AI动作评估</h4>
+                    <p>智能分析用户舞蹈动作，提供实时反馈和改进建议。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🎓</div>
+                    <h4>在线教育</h4>
+                    <p>专业课程体系，从入门到精通，随时随地学习非遗舞蹈。</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛍️</div>
+                    <h4>文创产品</h4>
+                    <p>精选民族舞蹈主题文创，让非遗融入现代生活。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <h3>最新动态</h3>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-date">2025.6.1</div>
+                    <h4>苗族锦鸡舞数字化项目启动</h4>
+                    <p>与贵州非遗保护中心合作，开展苗族锦鸡舞的数字化采集与保存工作。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025.4.9</div>
+                    <h4>非遗舞蹈VR体验展</h4>
+                    <p>在北京民族文化宫举办非遗舞蹈VR体验展，吸引数千观众参与。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025.02.12</div>
+                    <h4>平台用户突破10万</h4>
+                    <p>感谢大家的支持，平台注册用户已突破10万，我们将继续努力。</p>
+                    <a href="#" class="read-more">了解更多 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="非遗舞鉴">
+                        <h3>非遗舞鉴</h3>
+                    </div>
+                    <p>少数民族舞蹈数字保护与活态传承平台</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="#">数字资源库</a></li>
+                        <li><a href="#">在线教育</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p>邮箱: contact@feiyidance.com</p>
+                    <p>电话: 010-12345678</p>
+                    <div class="social-media">
+                        <a href="#">微信</a>
+                        <a href="#">微博</a>
+                        <a href="#">抖音</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 非遗舞鉴 版权所有</p>
+                <p>京ICP备12345678号</p>
+            </div>
         </div>
     </footer>
-    
+
     <script src="js/main.js"></script>
 </body>
 </html>
